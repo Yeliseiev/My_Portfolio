@@ -70,6 +70,6 @@
   border-radius: vars.$border-radius;
   filter: grayscale(100%);
   object-fit: cover;
-  object-position: left;
+  object-position: center;
   transition: vars.$transition-duration;
 }

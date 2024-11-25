@@ -6,7 +6,7 @@
 
 ## Summary
 
-I am a purposeful software developer with strong programming skills. Well familiar with CSS/HTML, Sass preprocessor, cross-browser and adaptive markup skills. Good at JavaScript coding, solving algorithmic tasks and developing user-friendly solutions. I am a responsible individual who continually advances skills and abilities. Very interested in studying  Angular / Vue.
+I am a purposeful software developer with strong programming skills. Well familiar with CSS/HTML, Sass preprocessor, cross-browser and adaptive markup skills. Good at JavaScript coding, solving algorithmic tasks and developing user-friendly solutions. I am a responsible individual who continually advances skills and abilities. Very interested in studying React Native, NodeJS.
 Ready for joining upon request.
 
 ### Skils
