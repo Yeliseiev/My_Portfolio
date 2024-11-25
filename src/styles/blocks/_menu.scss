@@ -1,0 +1,54 @@
+@use "../utils/mixins";
+@use "../utils/vars";
+@use "../utils/extends";
+
+.menu {
+  display: none;
+
+  @include mixins.onTablet {
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__item {
+    counter-increment: item 1;
+  }
+
+  &__link {
+    color: vars.$lightest-slate;
+    font-size: 13px;
+
+    transition: vars.$transition-duration;
+    @extend %li;
+
+    &::before {
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      color: vars.$green;
+      content: '0' counter(item) '.';
+      font-size: 12px;
+      text-align: center;
+      @extend %li;
+    }
+
+    &:hover {
+      color: vars.$green;
+    }
+  }
+
+  &__button {
+    padding: 0.75rem 1.25rem;
+    margin-left: 50px;
+    font-size: 14px;
+  }
+}

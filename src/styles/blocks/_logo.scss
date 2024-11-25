@@ -1,0 +1,42 @@
+@use "../utils/vars";
+
+.logo {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 42px;
+  height: 48px;
+
+  &__hex {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    fill: vars.$green;
+    transition: vars.$transition-duration;
+  }
+
+  & svg:first-of-type {
+    position: relative;
+    z-index: 6;
+    fill: vars.$navy;
+    transition: vars.$transition-duration;
+
+    &:hover {
+      transform: translate(-4px, -3px);
+
+      & + .logo__hex {
+        transform: translateY(-1px);
+      }
+    }
+  }
+
+  & path {
+    stroke: vars.$green;
+  }
+
+  & text {
+    fill: vars.$green;
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,5 @@
+/build
+/dist
+
+vite.config.ts
+eslint.config.js

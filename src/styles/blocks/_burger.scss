@@ -1,0 +1,102 @@
+@use "../utils/mixins";
+@use "../utils/vars";
+
+.burger {
+  &__label {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    width: 32px;
+    height: 28px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.15s;
+
+    @include mixins.onTablet {
+      display: none;
+    }
+
+    &--icon-E {
+      position: relative;
+      width: 32px;
+      height: 2px;
+      background-color: vars.$green;
+      transition-delay: 0.15s;
+      transition-duration: 0.15s;
+
+      &:before {
+        position: absolute;
+        bottom: 10px;
+        width: 32px;
+        height: 2px;
+        background-color: vars.$green;
+        content: "";
+        transition-duration: 0.15s;
+      }
+
+      &:after {
+        position: absolute;
+        top: 10px;
+        width: 32px;
+        height: 2px;
+        background-color: vars.$green;
+        content: "";
+        transition-duration: 0.15s;
+      }
+    }
+
+    &--icon-X {
+      position: relative;
+      left: 0;
+      width: 32px;
+      height: 2px;
+      transform: scaleX(0);
+      transform-origin: 32px 0px;
+      transition: 0.15s;
+
+      &:before {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 32px;
+        height: 2px;
+        background-color: vars.$green;
+        content: "";
+        transform: rotateZ(45deg) scale(1.2) translate(3px, 3px);
+        transition-duration: 0.15s;
+      }
+
+      &:after {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 32px;
+        height: 2px;
+        background-color: vars.$green;
+        content: "";
+        transform: rotateZ(-45deg) scale(1.2) translate(6px, -6px);
+        transition-duration: 0.15s;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+    width: 0;
+
+    &:checked + .burger__label {
+      & > .burger__label--icon-E {
+        transform: scaleX(0);
+        transition-delay: 0s;
+        transition-duration: 0.15s;
+      }
+
+      & > .burger__label--icon-X {
+        transform: scaleX(1);
+        transition-delay: 0.15s;
+      }
+    }
+  }
+}

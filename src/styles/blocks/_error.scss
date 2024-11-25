@@ -1,0 +1,11 @@
+@use "../utils/vars";
+@use "../utils/extends";
+
+.error {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  color: vars.$blue;
+  @extend %h1;
+}

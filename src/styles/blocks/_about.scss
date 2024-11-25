@@ -1,0 +1,134 @@
+@use '../utils/mixins';
+@use '../utils/vars';
+@use '../utils/extends';
+
+.about {
+  &__content {
+    display: block;
+
+    @include mixins.onTablet {
+      display: grid;
+      gap: 50px;
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+  &__text {
+    color: vars.$slate;
+
+    & p {
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
+    & a {
+      position: relative;
+      display: inline-block;
+      @extend %p;
+      color: vars.$green;
+      transition: vars.$transition-duration;
+
+      &::after {
+        position: relative;
+        bottom: 3px;
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: vars.$green;
+        content: '';
+        opacity: 0.5;
+        transition: vars.$transition-duration;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    & ul {
+      display: grid;
+      gap: 0 10px;
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+
+      & li {
+        margin-bottom: 10px;
+
+        &::before {
+          margin-right: 10px;
+          color: vars.$green;
+          content: '▹';
+          font-size: 14px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: none;
+
+    @include mixins.onTablet {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__photo {
+    @extend %img-set;
+  }
+
+  &__picture {
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      border-radius: vars.$border-radius;
+
+      background-color: vars.$green;
+      content: '';
+      opacity: 0.6;
+      transition: vars.$transition-duration;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 12px;
+      right: -12px;
+      bottom: -9px;
+      left: 12px;
+      border: 2px solid vars.$green;
+      border-radius: vars.$border-radius;
+      content: '';
+      transition: vars.$transition-duration;
+    }
+
+    &:hover {
+      & .about__photo {
+        filter: none;
+        transform: translate(-5px, -5px);
+      }
+
+      &::after {
+        transform: translate(3px, 3px);
+      }
+
+      &::before {
+        opacity: 0;
+        transform: translate(-5px, -5px);
+      }
+    }
+  }
+}

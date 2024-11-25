@@ -1,0 +1,40 @@
+.animation {
+  opacity: 0;
+
+  transition: transform 1s,
+    opacity 1s;
+
+  &--left {
+    transform: translateX(-100%);
+  }
+
+  &--right {
+    transform: translateX(100%);
+  }
+
+  &--bottom {
+    transform: translateY(50px);
+  }
+
+  &--top {
+    transform: translateY(-100%);
+  }
+
+  &--delay-100 {
+    transition-delay: 100ms;
+  }
+  &--delay-200 {
+    transition-delay: 200ms;
+  }
+  &--delay-300 {
+    transition-delay: 300ms;
+  }
+  &--delay-400 {
+    transition-delay: 400ms;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}

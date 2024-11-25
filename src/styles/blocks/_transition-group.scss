@@ -1,0 +1,77 @@
+@use "../utils/vars";
+
+.fadeup-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+
+.fadeup-enter-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+
+/* Fade down */
+.fadedown-enter {
+  opacity: 0.01;
+  transform: translateY(-20px);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+.fadedown-enter-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+.fadedown-appear-active {
+  opacity: 0.01;
+  transform: translateY(-20px);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+.fadedown-appear-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+.fadedown-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+.fadedown-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    opacity vars.$transition-duration,
+    transform vars.$transition-duration;
+}
+
+/* Fade */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-done {
+  opacity: 1;
+  transition: opacity vars.$transition-duration;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity vars.$transition-duration;
+}

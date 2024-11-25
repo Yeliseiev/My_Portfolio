@@ -1,0 +1,19 @@
+@use "../utils/vars";
+@use "../utils/extends";
+
+.button {
+  display: inline-block;
+  padding: 18px 50px;
+  border: 1px solid vars.$green;
+  border-radius: vars.$border-radius;
+  background-color: transparent;
+  color: vars.$green;
+  cursor: pointer;
+  transition: vars.$transition-duration;
+  @extend %button;
+
+  &:hover {
+    box-shadow: vars.$box-shadow-button;
+    transform: translate(-5px, -5px);
+  }
+}

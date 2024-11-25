@@ -1,0 +1,60 @@
+@use "../utils/mixins";
+@use "../utils/vars";
+@use "../utils/extends";
+
+.section {
+  max-width: 1000px;
+  padding: 80px 0;
+  margin: 0 auto;
+
+  @include mixins.onTablet {
+    padding: 100px 0;
+  }
+
+  &__max {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+  }
+
+  &__title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+    color: vars.$lightest-slate;
+    white-space: nowrap;
+
+    &::before {
+      position: relative;
+      bottom: 1px;
+      align-self: flex-end;
+      margin-right: 5px;
+      color: vars.$green;
+      content: '0' counter(section) '.';
+      counter-increment: section 1;
+      @extend %section-num;
+    }
+
+    &::after {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-left: 20px;
+      background-color: vars.$lightest-navy;
+      content: '';
+
+      @include mixins.onTablet {
+        width: 200px;
+      }
+
+      @include mixins.onDesktop {
+        width: 300px;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@use "../utils/mixins";
+@use "../utils/vars";
+@use "../utils/extends";
+
+.decor {
+  display: none;
+
+  @include mixins.onTablet {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    display: flex;
+    width: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &--left {
+      left: 15px;
+    }
+
+    &--right {
+      right: 15px;
+    }
+  }
+
+  @include mixins.onDesktop {
+    &--left {
+      left: 50px;
+    }
+
+    &--right {
+      right: 50px;
+    }
+  }
+
+  &::after {
+    display: block;
+    width: 1px;
+    height: 100px;
+    background-color: vars.$light-slate;
+    content: '';
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 5px;
+
+    & li {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__link {
+    padding: 10px;
+    color: vars.$light-slate;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 18px;
+    writing-mode: vertical-rl;
+    @extend %li;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--stroke svg {
+      stroke: vars.$light-slate;
+      transition: vars.$transition-duration;
+    }
+
+    &--fill path {
+      fill: vars.$light-slate;
+      transition: vars.$transition-duration;
+    }
+
+    &:hover {
+      color: vars.$green;
+
+      &.decor__link--stroke svg {
+        stroke: vars.$green;
+      }
+
+      &.decor__link--fill path {
+        fill: vars.$green;
+      }
+    }
+  }
+}

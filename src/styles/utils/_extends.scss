@@ -1,0 +1,75 @@
+@use "vars";
+
+%h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(40px, 8vw, 65px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+%h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(22px, 4vw, 32px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+%h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+%a {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+%p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+%button {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+%li {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+%section-num {
+  font-family: 'Roboto Mono', monospace;
+  font-size: clamp(18px, 3vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+%img-set {
+  width: 100%;
+  height: 100%;
+  border-radius: vars.$border-radius;
+  filter: grayscale(100%);
+  object-fit: cover;
+  object-position: left;
+  transition: vars.$transition-duration;
+}
