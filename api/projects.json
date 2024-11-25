@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "slug": "MyBike",
+    "title": "My Bike",
+    "description": "A landing page for a bike rental service. Welcome to the world of thrilling bike adventures! Explore our extensive range of bikes for sale and rent, along with a diverse selection of accessories to enhance your cycling experience. Choose your perfect two-wheeled companion and embark on unforgettable journeys on the road!",
+    "tags": [
+      "Landing",
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript",
+      "BEM",
+      "Grid",
+      "Flex"
+    ],
+    "img": "img/my-bike.jpg",
+    "projectURL": "https://github.com/Yeliseiev/MyBike",
+    "webURL": "https://yeliseiev.github.io/MyBike/#",
+    "layoutURL": "https://www.figma.com/file/Ic3SlZjkATYaS7uTifZAIk/BIKE"
+  },
+  {
+    "id": 2,
+    "slug": "TheMet",
+    "title": "The Met",
+    "description": "Discover centuries of artistic brilliance at The MET, a cultural icon where history and creativity converge. Immerse yourself in the world's finest masterpieces, spanning diverse civilizations. Unearth the beauty of human expression within the walls of this renowned museum.",
+    "tags": [
+      "Landing",
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript",
+      "Grid",
+      "Flex",
+      "BEM"
+    ],
+    "img": "img/the-met.jpg",
+    "projectURL": "https://github.com/Yeliseiev/the-met",
+    "webURL": "https://yeliseiev.github.io/the-met/",
+    "layoutURL": "https://www.figma.com/file/lSR1m42L9YwzQwzzxKwHpw/THE-MET"
+  },
+  {
+    "id": 3,
+    "slug": "Kickstarter",
+    "title": "Kickstarter",
+    "description": "Transform your sound experience with our cutting-edge wireless speakers, shaped in a sleek sphere design. Elevate your space with immersive audio and modern aesthetics. Explore innovation in every layer – redefine your music, redefine your style.",
+    "tags": [
+      "Landing",
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript",
+      "Grid",
+      "Flex",
+      "BEM",
+      "Swipper"
+    ],
+    "img": "img/kickstarter.jpg",
+    "projectURL": "https://github.com/Yeliseiev/Kickstarter_layout",
+    "webURL": "https://yeliseiev.github.io/Kickstarter_layout/",
+    "layoutURL": "https://www.figma.com/file/Ujp7bCFuvuJlkn8TSbQPSZ/Kickstarter_FE-students"
+  },
+  {
+    "id": 4,
+    "slug": "potr-pots",
+    "title": "Potr Pots",
+    "description": "Embrace effortless plant care with our exclusive plant pots. Elevate your greenery game as these unique pots ensure your plants thrive with minimal effort. Experience a harmonious blend of amenities and nature in every pot.",
+    "tags": [
+      "Landing",
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript",
+      "BEM",
+      "Grid",
+      "Flex",
+      "Swipper"
+    ],
+    "img": "img/potr-pots.jpg",
+    "projectURL": "https://github.com/Yeliseiev/Potr_Pots_project",
+    "webURL": "https://yeliseiev.github.io/Potr_Pots_project/",
+    "layoutURL": "https://www.figma.com/file/50zgLU65Mcd3MisFHMfLfx/POTR-POTS_FE-students"
+  },
+  {
+    "id": 5,
+    "slug": "todo-app-with-api",
+    "title": "Todo App",
+    "description": "Meet the Todo App – your ultimate task management solution. Effortlessly organize your day, create tasks, and stay productive. With a simple and intuitive interface, managing your to-do list has never been more convenient.",
+    "tags": [
+      "HTML",
+      "SCSS",
+      "React.js",
+      "TransitionGroup",
+      "TypeScript",
+      "ESLint",
+      "REST API requests"
+    ],
+    "img": "img/todos.jpg",
+    "projectURL": "https://github.com/Yeliseiev/react-todo-app-with-api",
+    "webURL": "https://yeliseiev.github.io/react-todo-app-with-api/",
+    "layoutURL": ""
+  },
+  {
+    "id": 6,
+    "slug": "phone-catalog",
+    "title": "Phone catalog",
+    "description": "Explore the pinnacle of technology with our range of iPhones, tablets, and cutting-edge accessories. Elevate your digital lifestyle with sleek designs and unparalleled performance. Dive into a world of innovation and convenience at our online store.",
+    "tags": [
+      "HTML",
+      "SCSS",
+      "React.js",
+      "Redux",
+      "Router",
+      "API",
+      "Local Storage"
+    ],
+    "img": "img/phone-catalog.png",
+    "projectURL": "https://github.com/Yeliseiev/phone_catalog_react_redux",
+    "webURL": "https://yeliseiev.github.io/phone_catalog_react_redux/",
+    "layoutURL": "https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign"
+  }
+]

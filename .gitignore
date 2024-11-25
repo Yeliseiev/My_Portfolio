@@ -1,0 +1,42 @@
+# Відсутність node_modules
+node_modules/
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Файли ОС
+.DS_Store
+Thumbs.db
+
+# Папка build/output
+dist/
+build/
+
+# Файли середовища
+.env
+.env.local
+.env.*.local
+
+# Кеш
+.cache/
+*.cache
+
+# IDE та редактори
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# Локальні файли проєкту
+*.log
+coverage/
+
+# PM2 або інші файли, що містять налаштування процесів
+pids/
+*.pid
+*.pid.lock
