@@ -2,8 +2,6 @@ import { useInView } from 'react-intersection-observer';
 
 import cn from 'classnames';
 
-import Photo from '../assets/img/frontend.svg';
-
 export const About = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -100,7 +98,11 @@ export const About = () => {
 
           <div className="about__wrapper">
             <div className="about__picture">
-              <img src={Photo} className="about__photo" alt="fronend picture" />
+              <img
+                src="./img/frontend.svg"
+                className="about__photo"
+                alt="fronend picture"
+              />
             </div>
           </div>
         </div>
