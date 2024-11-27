@@ -2,7 +2,7 @@
 
 ## Visit my web-site
 
-- [SITE LINK](https://yeliseiev.github.io/portfilio/)
+- [SITE LINK](https://yeliseiev.github.io/portfolio/)
 
 ## Summary
 
