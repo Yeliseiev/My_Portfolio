@@ -61,7 +61,7 @@ export const Menu: React.FC<Props> = ({ menuType }) => {
               <CSSTransition in={show} timeout={100} classNames="fadedown">
                 <div style={{ transitionDelay: `${menuItems.length * 100}ms` }}>
                   <a
-                    href="./cv/Kim_Yeliseiev_CV.pdf"
+                    href="./cv/CV.Kim_Yeliseiev_FE.pdf"
                     className="button menu__button"
                     target="_blank"
                     rel="noopener noreferrer"

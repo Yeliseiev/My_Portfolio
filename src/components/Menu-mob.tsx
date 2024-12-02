@@ -55,7 +55,7 @@ export const MenuMob = () => {
             ))}
           </ol>
           <a
-            href="./cv/Kim_Yeliseiev_CV.pdf"
+            href="./cv/CV.Kim_Yeliseiev_FE.pdf"
             className="button"
             target="_blank"
             rel="noopener noreferrer"
